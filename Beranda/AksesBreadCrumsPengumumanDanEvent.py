@@ -69,16 +69,25 @@ try:
     login.click()
     time.sleep(10)
 
-    #Akses  BreadCrums Pengumuman
 
-    br_pengumuman = wait.until(EC.presence_of_element_located(By.XPATH,"//android.widget.Button[@content-desc='Pengumuman']"))
+
+    #Akses  Menu Pengumuman
+
+    br_pengumuman = wait.until(lambda d:d.find_element(By.ACCESSIBILITY_ID,"Pengumuman"))
     br_pengumuman.click()
     time.sleep(5)
 
 
+
+    #Akses breadcrums Pengumuman
+    ngumumin = wait.until(lambda d:d.find_element(By.ACCESSIBILITY_ID,"Pengumuman"))
+    ngumumin.click()
+    time.sleep(3)
+
+
     #akses breadcrums Event
 
-    br_event = wait.until(EC.presence_of_element_located(By.XPATH,"//android.widget.Button[@content-desc='Event']"))
+    br_event = wait.until(lambda d: d.find_element(By.ANDROID_UIAUTOMATOR,'new UiSelector().description("Event")'))
     br_event.click()
     time.sleep(5)
 
