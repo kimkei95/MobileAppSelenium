@@ -1,0 +1,8 @@
+allure-pytest==2.13.5
+selenium~=4.28.1
+Appium-Python-Client~=4.5.0
+pytest==8.3.4
+pillow==9.4.0
+reportlab==3.6.12
+
+allure-python-commons~=2.13.5

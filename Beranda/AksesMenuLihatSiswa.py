@@ -72,7 +72,7 @@ try:
     # Lihat Siswa
     lihat_siswa = wait.until(EC.presence_of_element_located((By.XPATH,"//android.widget.ImageView[@content-desc='Daftar Siswa']")))
     lihat_siswa.click()
-    time.sleep(3)
+    time.sleep(5)
 
 
 finally:
